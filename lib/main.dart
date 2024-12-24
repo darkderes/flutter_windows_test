@@ -89,16 +89,16 @@ class RightSide extends StatelessWidget {
 }
 
 final buttonColors = WindowButtonColors(
-    iconNormal: Color.fromARGB(255, 245, 244, 243),
-    mouseOver: Color.fromARGB(255, 63, 63, 63),
-    mouseDown: Color.fromARGB(255, 63, 63, 63),
-    iconMouseOver: Color.fromARGB(255, 245, 245, 244),
-    iconMouseDown: Color.fromARGB(255, 240, 239, 238));
+    iconNormal: const Color.fromARGB(255, 245, 244, 243),
+    mouseOver: const Color.fromARGB(255, 63, 63, 63),
+    mouseDown: const Color.fromARGB(255, 63, 63, 63),
+    iconMouseOver: const Color.fromARGB(255, 245, 245, 244),
+    iconMouseDown: const Color.fromARGB(255, 240, 239, 238));
 
 final closeButtonColors = WindowButtonColors(
     mouseOver: const Color(0xFFD32F2F),
     mouseDown: const Color(0xFFB71C1C),
-    iconNormal: Color.fromARGB(255, 247, 246, 244),
+    iconNormal: const Color.fromARGB(255, 247, 246, 244),
     iconMouseOver: Colors.white);
 
 class WindowButtons extends StatefulWidget {
