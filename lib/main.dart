@@ -5,12 +5,12 @@ import 'package:flutter/material.dart';
 import 'package:bitsdojo_window/bitsdojo_window.dart';
 
 void main() {
-  appWindow.size = const Size(600, 450);
+  appWindow.size = const Size(800, 600);
   runApp(const MyApp());
   appWindow.show();
   doWhenWindowReady(() {
     final win = appWindow;
-    const initialSize = Size(600, 450);
+    const initialSize = Size(800, 600);
     win.minSize = initialSize;
     win.size = initialSize;
     win.alignment = Alignment.center;
@@ -19,7 +19,7 @@ void main() {
   });
 }
 
-const borderColor = Color(0xFF805306);
+const borderColor = Color.fromARGB(255, 238, 240, 238);
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
-const sidebarColor = Color(0xFFF6A00C);
+const sidebarColor = Color.fromARGB(255, 14, 13, 13);
 
 class LeftSide extends StatelessWidget {
   const LeftSide({super.key});
@@ -60,8 +60,8 @@ class LeftSide extends StatelessWidget {
   }
 }
 
-const backgroundStartColor = Color(0xFFFFD500);
-const backgroundEndColor = Color(0xFFF6A00C);
+const backgroundStartColor = Color.fromARGB(255, 3, 3, 3);
+const backgroundEndColor = Color.fromARGB(255, 20, 20, 20);
 
 class RightSide extends StatelessWidget {
   const RightSide({super.key});
@@ -89,16 +89,16 @@ class RightSide extends StatelessWidget {
 }
 
 final buttonColors = WindowButtonColors(
-    iconNormal: const Color(0xFF805306),
-    mouseOver: const Color(0xFFF6A00C),
-    mouseDown: const Color(0xFF805306),
-    iconMouseOver: const Color(0xFF805306),
-    iconMouseDown: const Color(0xFFFFD500));
+    iconNormal: Color.fromARGB(255, 245, 244, 243),
+    mouseOver: Color.fromARGB(255, 63, 63, 63),
+    mouseDown: Color.fromARGB(255, 63, 63, 63),
+    iconMouseOver: Color.fromARGB(255, 245, 245, 244),
+    iconMouseDown: Color.fromARGB(255, 240, 239, 238));
 
 final closeButtonColors = WindowButtonColors(
     mouseOver: const Color(0xFFD32F2F),
     mouseDown: const Color(0xFFB71C1C),
-    iconNormal: const Color(0xFF805306),
+    iconNormal: Color.fromARGB(255, 247, 246, 244),
     iconMouseOver: Colors.white);
 
 class WindowButtons extends StatefulWidget {
